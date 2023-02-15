@@ -38,6 +38,10 @@ body {
     margin: 0 auto;
 }
 
+.section-line {
+    border-bottom: 1px solid rgba(208, 212, 216, 0.5);
+}
+
 /* ! HEADER SECTION */
 
 .header__top {
@@ -134,7 +138,6 @@ body {
     padding-bottom: 80px;
     display: flex;
     justify-content: space-evenly;
-    border-bottom: 1px solid rgba(208, 212, 216, 0.5);
 }
 .why__summary-item {
     display: flex;
@@ -156,4 +159,7 @@ body {
     font-size: 14px;
     line-height: 17px;
     color: #909090;
+}
+.why__text{
+    text-align: justify;
 }
