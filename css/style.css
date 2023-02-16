@@ -46,6 +46,7 @@ body {
 .section-line {
     border-bottom: 1px solid rgba(208, 212, 216, 0.5);
 }
+
 .title {
     font-family: "Georgia";
     color: #4e5665;
@@ -169,6 +170,7 @@ body {
 }
 
 /* ! ABOUT SECTION */
+
 .about {
     padding-top: 80px;
 }
@@ -238,8 +240,81 @@ body {
     border-right: 2px solid #ecb84c;
     border-top: 2px solid #ecb84c;
 }
-
+.about__preview-title {
+    margin-bottom: 38px;
+}
+.about__preview-text {
+    text-align: justify;
+    margin: 53px auto 80px;
+}
+.about__image-wrapper {
+    padding-top: 73px;
+    position: relative;
+}
+.about__dot {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: rgba(236, 184, 76, 0.75);
+    position: absolute;
+    cursor: pointer;
+}
+.about__dot::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ffd600;
+    top: 50%;
+    left: 20%;
+    transform: translate(50%, -50%);
+}
+.about__dot::before {
+    content: "";
+    position: absolute;
+    background-image: url("../images/about-line.svg");
+    width: 244px;
+    height: 122px;
+    top: -118px;
+    left: 24px;
+    display: none;
+}
+.about__dot--roof {
+    top: 147px;
+    right: 372px;
+}
+.about__dot--front {
+    top: 190px;
+    left: 148px;
+}
+.about__dot--door {
+    top: 188px;
+    left: 495px;
+}
+.about__dot--wheel {
+    bottom: 28px;
+    right: 299px;
+}
+.about__dot-text {
+    position: absolute;
+    color: #505050;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 28px;
+    top: -150px;
+    left: 150px;
+    white-space: nowrap;
+    display: none;
+}
+.about__dot:hover::before {
+    display: block;
+}
+.about__dot:hover .about__dot-text {
+    display: block;
+}
 /* ! PHOTO SECTION */
+
 .photo {
     padding: 80px 0;
 }
@@ -266,6 +341,7 @@ body {
 .photo__slider {
     max-width: 640px;
     margin: 0 auto;
+    filter: drop-shadow(0px 2px 24px rgba(0, 0, 0, 0.3));
 }
 .slick-prev,
 .slick-next {
@@ -284,6 +360,7 @@ body {
 }
 
 /* ! FOOTER */
+
 .footer {
     background: #f8f8f8;
     padding: 55px 0 32px;
